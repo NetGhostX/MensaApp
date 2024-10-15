@@ -5,16 +5,33 @@ body {
   padding: 0;
 }
 header {
-  background-color: red;
   padding: 10px 0;
   position: sticky;
   top: 0;
+  background-color: darkgr;
   z-index: 1000;
+  overflow: hidden;
 }
 
+/*styling the logo*/
 .logo > .fh_logo {
   height: 70px;
   float: left;
   position: absolute;
   left: 10px;
+  cursor: pointer;
+}
+
+/*styling the navigation*/
+.nav_container {
+  background-color: #333;
+  top: 0;
+  margin: 0; /* Added this line */
+}
+.nav_container > ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  font-weight: 300px;
 }
