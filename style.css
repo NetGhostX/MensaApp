@@ -70,11 +70,23 @@ main {
 }
 
 .hero {
+  display: flex;
   position: relative;
   text-align: center;
 }
 
-.hero-content hero-text {
-  color: green;
-  font-weight: bold;
+.hero-content {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure it takes the full height of the parent */
+}
+
+h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+p {
+  display: inline-block;
 }
