@@ -1,0 +1,4 @@
+-- Add ID column if it doesn't exist
+ALTER TABLE gericht
+MODIFY COLUMN id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT FIRST,
+ADD PRIMARY KEY (id);
